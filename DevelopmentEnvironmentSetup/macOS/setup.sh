@@ -55,6 +55,7 @@ brew cask install virtualbox-extension-pack
 brew cask install mockplus
 brew cask install vectr
 brew cask install cyberduck
+brew cask install spotify
 
 brew install packer
 brew install terraform
