@@ -1,0 +1,22 @@
+Set-ExecutionPolicy AllSigned
+
+Write-Host "Installing Chocolatey"
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+choco install googlechrome
+choco install 7zip
+choco install putty
+choco install curl
+choco install paint.net
+choco install sql-server-management-studio
+choco install vscode
+choco install sourcetree
+choco install postman
+choco install p4merge
+
+Write-Host "Download tools for manual installation"
+mkdir ~/Downloads/ManualInstall
+cd ~/Downloads/ManualInstall
+
+Invoke-WebRequest -Uri $url -OutFile $output
+wget https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15# -O vs_professional.exe
