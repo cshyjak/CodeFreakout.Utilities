@@ -46,7 +46,6 @@ brew cask install mysqlworkbench
 brew cask install tunnelblick
 brew cask install gimp
 brew cask install google-chrome
-brew cask install google-hangouts 
 brew cask install google-drive-file-stream 
 brew cask install slack
 brew cask install vlc
@@ -56,6 +55,7 @@ brew cask install mockplus
 brew cask install vectr
 brew cask install cyberduck
 brew cask install spotify
+brew cask install github
 
 brew install packer
 brew install terraform
