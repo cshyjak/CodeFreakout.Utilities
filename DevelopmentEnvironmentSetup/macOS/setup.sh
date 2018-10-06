@@ -51,7 +51,6 @@ brew cask install slack
 brew cask install vlc
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
-brew cask install mockplus
 brew cask install vectr
 brew cask install cyberduck
 brew cask install spotify
