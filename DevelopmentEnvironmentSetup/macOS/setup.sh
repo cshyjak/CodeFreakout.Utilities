@@ -1,3 +1,5 @@
+xcode-select --install
+
 echo "Check for homebrew and install if needed"
 
 if ! [ -x "$(command -v brew)" ]; then
@@ -26,7 +28,7 @@ else
 fi
 
 echo "Install Alternate Python Versions"
-pyenv install 3.7.0
+CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 3.7.0
 
 if ! [ -x "$(command -v wget)" ]; then
     echo "wget, attempting to install now"
