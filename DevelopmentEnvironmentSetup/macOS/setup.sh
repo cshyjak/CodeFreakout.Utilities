@@ -29,6 +29,7 @@ fi
 
 echo "Install Alternate Python Versions"
 CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 3.7.0
+CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 3.6.6
 
 if ! [ -x "$(command -v wget)" ]; then
     echo "wget, attempting to install now"
