@@ -50,6 +50,7 @@ brew cask install tunnelblick
 brew cask install gimp
 brew cask install google-chrome
 brew cask install google-drive-file-stream 
+brew cask install google-chat
 brew cask install slack
 brew cask install vlc
 brew cask install virtualbox
