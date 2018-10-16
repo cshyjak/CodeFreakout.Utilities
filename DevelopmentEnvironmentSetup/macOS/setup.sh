@@ -62,6 +62,7 @@ brew cask install github
 
 brew install packer
 brew install terraform
+brew install node
 
 echo "Download tools for manual installation"
 mkdir ~/Downloads/ManualInstall
