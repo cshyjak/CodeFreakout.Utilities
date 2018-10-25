@@ -63,6 +63,7 @@ brew cask install github
 brew install packer
 brew install terraform
 brew install node
+brew install mysql@5.7
 
 echo "Download tools for manual installation"
 mkdir ~/Downloads/ManualInstall
