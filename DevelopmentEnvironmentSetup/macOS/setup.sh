@@ -28,8 +28,8 @@ else
 fi
 
 echo "Install Alternate Python Versions"
-CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 3.7.0
-CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 3.6.6
+pyenv install 3.7.0
+pyenv install 3.6.6
 
 if ! [ -x "$(command -v wget)" ]; then
     echo "wget, attempting to install now"
@@ -59,6 +59,8 @@ brew cask install vectr
 brew cask install cyberduck
 brew cask install spotify
 brew cask install github
+brew cask install dotnet-sdk
+brew cask install the-unarchiver
 
 brew install packer
 brew install terraform
