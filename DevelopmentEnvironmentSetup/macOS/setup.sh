@@ -66,6 +66,10 @@ brew install packer
 brew install terraform
 brew install node
 brew install mysql@5.7
+brew install kops
+brew install awscli
+brew install jq
+brew install git-lfs
 
 echo "Download tools for manual installation"
 mkdir ~/Downloads/ManualInstall
