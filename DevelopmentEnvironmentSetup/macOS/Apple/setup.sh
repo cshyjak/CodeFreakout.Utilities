@@ -39,8 +39,8 @@ fi
 echo "Install Dev Tools"
 brew install docker
 brew install kubectx
-brew install tfenv
-tfenv install latest
+brew install warrensbox/tap/tfswitch
+tfswitch --latest
 brew install --cask postman
 brew install awscli
 brew install jq
@@ -56,6 +56,8 @@ brew install --cask dotnet-sdk
 brew install --cask tableplus
 brew install helm
 brew install bash
+brew install argocd
+brew install kubeseal
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
@@ -68,11 +70,12 @@ brew install --cask miro
 brew install --cask zoom
 brew install --cask keybase
 brew install --cask transmission
+brew install --cask microsoft-teams
 
 echo "Google"
 brew install --cask google-chrome
 brew install --cask google-drive
-brew install --cask google-chat
+brew install --cask google-chat-electron
 
 echo "Firefox"
 brew install --cask firefox
