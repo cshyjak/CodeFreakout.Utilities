@@ -1,3 +1,5 @@
+xcode-select --install
+
 echo "Install Rosetta"
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
@@ -89,3 +91,13 @@ echo "Networking"
 brew install tunnelblick
 brew install wireguard-go
 brew install wireguard-tools
+
+echo "Setup SSH Keys"
+ssh-keygen
+
+cat > ~/.ssh/config <<- EOM
+Host *
+   UseKeychain yes
+   AddKeysToAgent yes
+   IdentityFile ~/.ssh/id_rsa
+EOM
